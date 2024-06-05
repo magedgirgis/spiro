@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  overflow: hidden;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: black;
+}
+
+.sec1 {
+  margin: auto;
+  width: calc(100vw - 10%);
+}
+
+.sec1 img {
+  height: 90vh;
+  width: 50%;
+}
+
+.sec1 h1 {
+  font-size: 50px;
+  min-width: 550px;
+}
+
+h3 {
+  font-family: "Roboto", sans-serif !important;
+}
+
+/* @media (max-width: 1260px) {
+  nav a h3 {
+    display: none;
+  }
+} */
+
+/* Tablet */
+
+@media (max-width: 1000px) {
+  body {
+    overflow-y: scroll;
+  }
+  nav .menu {
+    display: none;
+  }
+  nav .sidemenu {
+    display: block;
+    font-size: 30px;
+  }
+  .sec1 h1 {
+    font-size: 30px;
+    min-width: 200px;
+  }
+  .hero,
+  .sec1 {
+    padding: 0;
+  }
+  .sec1 img {
+    height: 90vh;
+  }
+  .sec1 {
+  }
+}
+
+@media (max-width: 700px) {
+  .sec1 {
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: auto;
+  }
+  .hero {
+    width: 700px;
+    text-align: center;
+    padding-right: 20px;
+    margin: 0 0;
+  }
+  .sec1 img {
+    width: 100%;
+  }
+  .sec1 h1 {
+    width: 100%;
+    padding-right: 50px;
+  }
+}
+
+/*  Animation */
+
+.menu {
+  animation: slideRightToLeft 2s forwards;
+}
+
+@keyframes slideRightToLeft {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.logoandanimate {
+  opacity: 0;
+  animation: slideLeftToRight 2s 1s forwards;
+}
+
+@keyframes slideLeftToRight {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.h1text {
+  animation: slideBottomToTop 2s 1s forwards;
+  opacity: 0;
+  /* color: white; */
+  color: #e5e7eb;
+  margin: 0 -50px 0 0 !important;
+  font-family: "Aref Ruqaa", serif;
+}
+
+@keyframes slideBottomToTop {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.menu {
+  position: relative;
+}
+
+.menu a {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  margin: 0 5px;
+  text-decoration: none;
+  color: black;
+}
+
+.menu a:hover {
+  transform: translateY(2px);
+}
+
+.menu a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: black;
+  transition: width 0.3s;
+}
+
+.menu a:hover::after {
+  width: 100%;
+}
+
+/*  Animation */
+
+.lamp {
+  animation: slideFromAbove 1s forwards;
+}
+
+.light {
+  animation: slideFromAbove 1s forwards;
+}
+
+@keyframes slideFromAbove {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.lamp-container {
+  animation: slideFromBelow 2s forwards;
+}
+
+@keyframes slideFromBelow {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* LAMP */
+
+@keyframes slideFromLeftRight {
+  0%,
+  100% {
+    transform: translateX(-10%);
+  }
+  50% {
+    transform: translateX(10%);
+  }
+}
+
+.bottle {
+  animation: slideFromLeftRight 5s ease-in-out infinite;
+}
+
+/* Title Animate */
+
+.titleAnimate {
+  max-height: 50px !important;
+  max-width: 50px !important;
+}
+
+/* Lamp */
+.heroImage {
+  position: relative;
+  height: 100vh;
+}
+.lamp-container {
+  position: absolute;
+  top: 72px;
+  left: 22%;
+  width: 200px;
+}
+.lamp {
+  height: 20vh !important;
+  width: 150px !important;
+}
+.light {
+  position: absolute;
+  top: 97%;
+  left: -235px;
+  transform: translateX(-50%);
+  min-width: 600px !important;
+}
+
+.sec1 img.bottle {
+  position: absolute;
+  top: 70px;
+  left: -250px;
+  width: 550px !important;
+  height: 590px !important;
+}
+.hidden {
+  display: none;
+}

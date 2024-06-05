@@ -44,7 +44,7 @@ if(isset($_GET['delete_all'])){
         <!-- Header -->
    <header>
             <div class="title" style="display: flex; align-items: center; gap: 15px;">
-                <a href="../indexx.php">
+                <a href="../index.html">
                     <img src="../img/17r.png" style="width: 50px; max-width: 300px" />
                 </a>
                 <a href="home.php">Home</a>

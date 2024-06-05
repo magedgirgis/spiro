@@ -48,7 +48,7 @@
     <div class="container-fluid sticky-top">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light p-0">
-              <a href="../indexx.php" class="navbar-brand">
+              <a href="../index.html" class="navbar-brand">
                 <img src="../img/17r.png" alt="" width="50" height="50" />
               </a>
               <button
@@ -247,7 +247,7 @@
       <div class="container py-5">
         <div class="row g-5">
           <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
-            <a href="../indexx.php" class="d-inline-block mb-3">
+            <a href="../index.html" class="d-inline-block mb-3">
               <h1 class="text-primary">سبيرو سباتس</h1>
             </a>
             <img src="../img/Logo-removebg-preview.png" alt="">
@@ -288,7 +288,7 @@
           </div>
           <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
             <h5 class="mb-4">Popular Link</h5>
-            <a class="btn btn-link" href="../indexx.php">indexx</a>
+            <a class="btn btn-link" href="../index.html">indexx</a>
             <a class="btn btn-link" href="home.php">Home</a>
             <a class="btn btn-link" href="services.php">Services</a>
             <a class="btn btn-link" href="about.php">About</a>

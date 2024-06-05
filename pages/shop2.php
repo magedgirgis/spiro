@@ -31,7 +31,7 @@ if(isset($_POST['add_to_cart'])){
         <!-- Header -->
    <header>
             <div class="title" style="display: flex; align-items: center; gap: 15px;">
-                <a href="../indexx.php">
+                <a href="../lndex.html">
                     <img src="../img/17r.png" style="width: 50px; max-width: 300px" />
                 </a>
                 <a href="home.php">Home</a>
